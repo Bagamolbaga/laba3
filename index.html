@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Подбор материнской платы под ваши требования</h1>
+  <form action="1.php" method="POST">
+    <div class="socket">
+      <p>Выберите сокет:</p>
+      <ul>
+        <li><p>
+          <input type="checkbox" id="LGA775" name='socket[]' value="LGA775"/>
+          <label for="LGA775">LGA775</label>
+        </p></li>
+        <li><p>
+          <input type="checkbox" id="LGA1155" name='socket[]' value="LGA1155"/>
+          <label for="LGA1155">LGA1155</label>
+        </p></li>
+        <li><p>
+          <input type="checkbox" id="LGA1151" name='socket[]' value="LGA1151"/>
+          <label for="LGA1151">LGA1151</label>
+        </p></li>
+        <li><p>
+          <input type="checkbox" id="LGA1151-v2" name='socket[]' value="LGA1151-v2"/>
+          <label for="LGA1151-v2">LGA1151-v2</label>
+        </p></li>
+      </ul>
+    </div>
+    <div class="memory-type">
+      <p>Выберите тип памяти:</p>
+      <ul>
+        <li><p>
+          <input type="checkbox" id="DDR2" name='memory-type[]' value="DDR2"/>
+          <label for="DDR2">DDR2</label>
+        </p></li>
+        <li><p>
+          <input type="checkbox" id="DDR3" name='memory-type[]' value="DDR3"/>
+          <label for="DDR3">DDR3</label>
+        </p></li>
+        <li><p>
+          <input type="checkbox" id="DDR4" name='memory-type[]' value="DDR4"/>
+          <label for="DDR4">DDR4</label>
+        </p></li>
+      </ul>
+    </div>
+    <input type="submit" value="Отправить" id="input-submit">
+  </form>
+</body>
+</html>
